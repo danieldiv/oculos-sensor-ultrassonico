@@ -5,6 +5,8 @@
 
 # oculos-sensor-ultrassonico
 
+> O projeto tem o objetivo de acionar um buzzer(apito sonoro) quando atingir uma determinada distancia de um objeto.
+
 - Link para simulação
 
 https://wokwi.com/projects/398616470820568065
@@ -31,6 +33,8 @@ float readDistanceCM() {
 ```
 
 - Acionamento do Schmitt Trigger
+
+A variavel `estado_duplo` tem o objetivo de acionar ou desligar o buzzer, quando for maior do que `UPPER_THRESHOLD` o buzzer é desligado, e quando for menor do que `LOWER_THRESHOLD` o buzzer é acionado. Quando o buzzer é acionado, ele só volta a desligar quando atinjir o limite de `UPPER_THRESHOLD`.
 
 ```cpp
 void schmitt_triggers_baixo(const float distancia) {
