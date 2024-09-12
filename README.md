@@ -34,7 +34,7 @@ float readDistanceCM() {
 
 - Acionamento do Schmitt Trigger
 
-A variavel `estado_duplo` tem o objetivo de acionar ou desligar o buzzer, quando for maior do que `UPPER_THRESHOLD` o buzzer é desligado, e quando for menor do que `LOWER_THRESHOLD` o buzzer é acionado. Quando o buzzer é acionado, ele só volta a desligar quando atinjir o limite de `UPPER_THRESHOLD`.
+A variavel `estado_duplo` tem o objetivo de acionar ou desligar o buzzer, quando for maior do que `UPPER_THRESHOLD` o buzzer é desligado, e quando for menor do que `LOWER_THRESHOLD` o buzzer é acionado. Assim que o buzzer é acionado, ele só volta a desligar quando atinjir o limite de `UPPER_THRESHOLD`.
 
 ```cpp
 void schmitt_triggers_baixo(const float distancia) {
