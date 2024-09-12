@@ -11,14 +11,20 @@
 
 https://wokwi.com/projects/398616470820568065
 
-## Limites de acionamento
+## Link para o artigo
+
+
+
+## Documentação do Código
+
+### Limites de acionamento
 
 ```cpp
 const float UPPER_THRESHOLD = 170;
 const float LOWER_THRESHOLD = 150;
 ```
 
-## Calculo da distancia em centimetros
+### Calculo da distancia em centimetros
 
 Inicialmente o pino `TRIG` do sensor ultrasson é colocado em baixo, é aguardado um delay inicial de **2 microsegundos** e em seguida o pino `TRIG` é colocado em alto, apos **10 microsegundos** o pino `TRIG` é colocado em baixo novamente, e então é calculado a distância pelo valor do pino `ECHO`.
 
@@ -36,7 +42,7 @@ float readDistanceCM() {
 }
 ```
 
-## Acionamento do Schmitt Trigger
+### Acionamento do Schmitt Trigger
 
 A variavel `estado_duplo` tem o objetivo de acionar ou desligar o buzzer, quando for maior do que `UPPER_THRESHOLD` o buzzer é desligado, e quando for menor do que `LOWER_THRESHOLD` o buzzer é acionado. Assim que o buzzer é acionado, ele só volta a desligar quando atingir o limite de `UPPER_THRESHOLD`.
 
@@ -51,7 +57,7 @@ void schmitt_triggers_baixo(const float distancia) {
 }
 ```
 
-## Intervalo de Apito do Buzzer
+### Intervalo de Apito do Buzzer
 
 A função tem o objetivo de modificar o intervalo em que o buzzer ira apitar, quanto mais proximo estiver do objeto, mais rapido sera o apito.
 
