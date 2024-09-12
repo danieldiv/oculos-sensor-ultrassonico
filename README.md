@@ -1,3 +1,4 @@
+![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Arduino](https://img.shields.io/badge/IDE-Arduino-informational)
 
 # oculos-sensor-ultrassonico
