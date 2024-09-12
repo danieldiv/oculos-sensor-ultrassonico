@@ -13,7 +13,44 @@ https://wokwi.com/projects/398616470820568065
 
 ## Link para o artigo
 
+## Fluxo geral do Sistema
 
+1. O computador envia informações ao arduino sobre o qual a velocidade o motor DC deverá funcionar.
+2. O arduino envia para o motor DC a velocidade que ele irá funcionar, e esse valor é setado.
+3. O motor DC estando com um disco acoplado, gira esse disco.
+4. O disco girando é captado pelo sensor infravermelho, enviando informações sobre o RPM.
+5. O arduino recebe informações do sensor infravermelho, interpreta e extrai o RPM atual.
+6. O arduino então retorna a informação para o computador para que o usuário possa visualizar o RPM do motor DC.
+
+## Componentes Utilizados
+
+- Arduino Uno
+- Sensor de Radiofrequencia
+- Buzzer Ativo 6V
+- Bateria 9 V
+- Óculos para Suporte
+
+## Resultados
+
+O circuito do protótipo foi inicialmente montado e testado em uma plataforma de simulação online. Wokwi. Nesta plataforma validamos a lógica de operação do sistema e otimizamos o layout dos componentes. Após a simulação, o circuito foi implementado fisicamente nos óculos inteligentes. A estrutura final integra um sensor ultrassônico HC-SR04, um microcontrolador Arduino Uno, um buzzer e uma bateria de 9V, além de um Schmitt Trigger para garantir a estabilidade do sinal e minimizar ruídos indesejados.
+
+Durante os testes experimentais, avaliamos a eficácia do sistema em diversos cenários para medir a precisão na detecção de obstáculos, o tempo de resposta do sistema, o conforto do dispositivo e o desempenho geral da bateria. Os resultados obtidos são discutidos detalhadamente nas seções seguintes.
+
+### Precisão na Detecção de Obstáculos
+
+Durante os testes, o protótipo demonstrou capacidade de detectar obstáculos a uma distância de até 1,5 metros. A detecção foi observada com base no feedback sonoro emitido pelo buzzer, que funcionou conforme esperado quando o objeto estava dentro do raio de ação do sensor. No entanto, notamos que superfícies transparentes ou reflexivas, como vidro, apresentaram dificuldades na detecção, um desafio comum em sistemas baseados em ultrassom.
+
+### Tempo de Resposta do Sistema}
+
+O tempo de resposta foi avaliado de forma empírica, com base na observação da rapidez com que o sistema emitia o alerta sonoro após a detecção de um obstáculo. Em condições normais, o protótipo respondeu de forma rápida e eficaz, permitindo ao usuário ajustar sua trajetória antes de colidir com o objeto. Embora não tenhamos dados quantitativos precisos, o tempo de resposta foi considerado adequado para o propósito do projeto.
+
+### Conforto e Usabilidade
+
+O protótipo foi avaliado por sua ergonomia e usabilidade. Observou-se que o peso total do dispositivo, aproximadamente 116 gramas, causava algum desconforto em usos prolongados. Além disso, o volume do buzzer, embora eficaz em ambientes silenciosos, foi considerado excessivo e incômodo em locais mais tranquilos, afetando não apenas o usuário, mas também as pessoas ao redor.
+
+### Limitações Identificadas
+
+O sistema apresentou limitações na detecção de obstáculos transparentes e pequenos, como superfícies de vidro, onde as ondas ultrassônicas não retornam adequadamente. Além disso, a ausência de um controle manual para desligar o dispositivo resultou em um consumo de bateria contínuo, o que poderia ser evitado com a inclusão de um botão de desligamento. O peso dos óculos e o volume do buzzer também foram identificados como pontos a serem melhorados.
 
 ## Documentação do Código
 
