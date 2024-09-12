@@ -11,8 +11,6 @@
 
 https://wokwi.com/projects/398616470820568065
 
-## Link para o artigo
-
 ## Documentação do Código
 
 ### Limites de acionamento
