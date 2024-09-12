@@ -1,8 +1,9 @@
-[![pypi](http://img.shields.io/pypi/v/pyhocon.png)](https://pypi.python.org/pypi/pyhocon)
+![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Arduino](https://img.shields.io/badge/IDE-Arduino-informational)
 ![ISO](https://img.shields.io/badge/ISO-Linux-blueviolet)
+![ISO](https://img.shields.io/badge/ISO-Windows-blueviolet)
 
-# oculos-sensor-ultrassonico
+# Sistema de Detecção de Obstáculos Baseado em Sensores Ultrassônicos para Auxílio à Mobilidade de Deficientes Visuais
 
 > O projeto tem o objetivo de acionar um buzzer(apito sonoro) quando atingir uma determinada distancia de um objeto.
 
