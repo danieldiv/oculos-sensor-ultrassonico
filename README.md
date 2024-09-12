@@ -5,7 +5,7 @@
 
 # Sistema de Detecção de Obstáculos Baseado em Sensores Ultrassônicos para Auxílio à Mobilidade de Deficientes Visuais
 
-> O projeto tem o objetivo de acionar um buzzer(apito sonoro) quando atingir uma determinada distancia de um objeto.
+> Este trabalho descreve o desenvolvimento de um protótipo de óculos inteligentes para auxiliar a mobilidade de pessoas com deficiência visual. O projeto visa criar uma solução de baixo custo e fácil implementação, com potencial para melhorar a autonomia e segurança de deficientes visuais. O sistema utiliza um sensor ultrassônico HC-SR04 para detectar obstáculos, com um alcance de até 4 metros, configurado para emitir alertas sonoros a uma distância de até 1,5 metros. O sensor é controlado por um microcontrolador Arduino Uno, que aciona um buzzer quando obstáculos são detectados, fornecendo feedback imediato ao usuário. Durante os testes, o protótipo demonstrou precisão na detecção de obstáculos a curta distância e tempo de resposta adequado, embora tenha apresentado limitações na detecção de superfícies transparentes e problemas com o conforto durante o uso prolongado.
 
 ## Link para simulação
 
