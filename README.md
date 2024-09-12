@@ -18,7 +18,11 @@ const float UPPER_THRESHOLD = 170;
 const float LOWER_THRESHOLD = 150;
 ```
 
-- Calculo da distancia em centimetros
+## Calculo da distancia em centimetros
+
+Inicialmente o `TRIG` do sensor ultrasson é colocado em baixo, é aguardado um delay inicial de **2 microsegundos** e em seguida o `TRIG` é colocado em alto, apos **10 microsegundos** o pino `TRIG` é colocado em baixo novamente, e então é calculado a distância pelo valor do pino `ECHO`.
+
+> O valor de `0,034` é referente a velocidade do som no ar. A divisão por **2** é por causa do tempo de ida e volta.
 
 ```cpp
 float readDistanceCM() {
@@ -32,7 +36,7 @@ float readDistanceCM() {
 }
 ```
 
-- Acionamento do Schmitt Trigger
+## Acionamento do Schmitt Trigger
 
 A variavel `estado_duplo` tem o objetivo de acionar ou desligar o buzzer, quando for maior do que `UPPER_THRESHOLD` o buzzer é desligado, e quando for menor do que `LOWER_THRESHOLD` o buzzer é acionado. Assim que o buzzer é acionado, ele só volta a desligar quando atingir o limite de `UPPER_THRESHOLD`.
 
