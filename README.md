@@ -1,8 +1,6 @@
+![Arduino](https://img.shields.io/badge/IDE-Arduino-informational)
+
 # oculos-sensor-ultrassonico
-
-- Execução
-
-> O projeto foi desenvolvido utilizando o Arduino IDE.
 
 - Link para simulação
 
