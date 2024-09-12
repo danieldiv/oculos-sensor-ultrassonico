@@ -58,8 +58,6 @@ void schmitt_triggers_baixo(const float distancia) {
   }  else if(distancia > UPPER_THRESHOLD) {
     estado_duplo = false;
   }
-//  Serial.println(estado_duplo);
-
   digitalWrite(LED_BUILTIN, estado_duplo);
 }
 
@@ -76,14 +74,14 @@ void loop() {
 
   max_count_dist = map(dist, 0, UPPER_THRESHOLD, 1, 10);
   Serial.println(max_count_dist);
-  
+
 
   delay(50);
-  
+
   if (estado_duplo && !tocando) {
     count_ativo += 1;
     if (count_ativo >= max_count_dist){
-      tocando = true;  
+      tocando = true;
     }
   } else if(estado_duplo && tocando){
     count_ativo -= 1;
@@ -94,11 +92,11 @@ void loop() {
     count_ativo = 0;
     tocando = false;
   }
-    
+
   if (tocando) {
   tone(BUZZER_PIN, 500);
   } else {
     noTone(BUZZER_PIN);
   }
-  
+
 }

@@ -29,3 +29,16 @@ float readDistanceCM() {
 	return duracao * 0.034 / 2;
 }
 ```
+
+- Acionamento do Schmitt Trigger
+
+```cpp
+void schmitt_triggers_baixo(const float distancia) {
+  if (distancia < LOWER_THRESHOLD) {
+    estado_duplo = true;
+  }  else if(distancia > UPPER_THRESHOLD) {
+    estado_duplo = false;
+  }
+  digitalWrite(LED_BUILTIN, estado_duplo);
+}
+```
