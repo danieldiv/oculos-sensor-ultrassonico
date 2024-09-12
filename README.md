@@ -7,11 +7,11 @@
 
 > O projeto tem o objetivo de acionar um buzzer(apito sonoro) quando atingir uma determinada distancia de um objeto.
 
-- Link para simulação
+## Link para simulação
 
 https://wokwi.com/projects/398616470820568065
 
-- Limites de acionamento
+## Limites de acionamento
 
 ```cpp
 const float UPPER_THRESHOLD = 170;
