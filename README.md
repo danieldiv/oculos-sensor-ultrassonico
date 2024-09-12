@@ -50,3 +50,22 @@ void schmitt_triggers_baixo(const float distancia) {
   digitalWrite(LED_BUILTIN, estado_duplo);
 }
 ```
+
+## Intervalo de Apito do Buzzer
+
+```cpp
+if (estado_duplo && !tocando) {
+    count_ativo += 1;
+    if (count_ativo >= max_count_dist){
+      tocando = true;
+    }
+  } else if(estado_duplo && tocando){
+    count_ativo -= 1;
+    if (count_ativo <= 0){
+      tocando = false;
+    }
+  } else{
+    count_ativo = 0;
+    tocando = false;
+  }
+```
