@@ -53,6 +53,8 @@ void schmitt_triggers_baixo(const float distancia) {
 
 ## Intervalo de Apito do Buzzer
 
+A função tem o objetivo de modificar o intervalo em que o buzzer ira apitar, quanto mais proximo estiver do objeto, mais rapido sera o apito.
+
 ```cpp
 if (estado_duplo && !tocando) {
     count_ativo += 1;
