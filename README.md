@@ -1,5 +1,7 @@
 ![C++](https://img.shields.io/badge/Linguagem-C++-green.svg)
 ![Arduino](https://img.shields.io/badge/IDE-Arduino-informational)
+![ISO](https://img.shields.io/badge/ISO-Linux-blueviolet)
+![ISO](https://img.shields.io/badge/ISO-Windows-blueviolet)
 
 # oculos-sensor-ultrassonico
 
